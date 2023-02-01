@@ -1,0 +1,119 @@
+body {
+  background-color: black;
+  max-width: 80%;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.wd-explore-border {
+  border: 1px solid;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-explore-border-img {
+  border: 1px solid;
+  border-color: rgb(47, 51, 54);
+  padding-bottom: 53px;
+}
+
+.wd-border-bottom {
+  border-bottom: 2px solid;
+  color: rgb(29, 161, 242);
+  border-radius: 2px;
+}
+
+#wd-search-tuit {
+  border-radius: 20px;
+  border-color: rgb(47, 51, 54);
+  width: 60%;
+  height: 30px;
+  background-color: darkgray;
+  padding-left: 50px;
+  margin-left: 16px;
+}
+
+.wd-topic-font-size {
+  font-size: 13px;
+}
+
+.wd-tuit-headers {
+  float: left;
+  padding: 16px;
+  font-size: 15px;
+}
+
+.wd-margin-bottom {
+  margin-bottom: 4px;
+}
+
+.wd-margin-top {
+  margin-top: 4px;
+}
+
+.wd-margin-bottom-top {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.wd-padding-left-16 {
+  padding-left: 16px;
+}
+.wd-padding-top-16 {
+  padding-top: 16px;
+}
+
+.wd-float-right {
+  float: right;
+}
+
+.wd-float-left {
+  float: left;
+}
+
+.wd-clear-left {
+  clear: left;
+}
+
+.wd-clear-right {
+  clear: right;
+}
+
+.wd-clear-both {
+  clear: both;
+}
+
+.wd-img-size-position {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  margin-right: 12px;
+  margin-top: 16px;
+}
+
+.wd-explore-settings {
+  float: right;
+  padding-top: 11px;
+  padding-right: 12px;
+}
+
+.wd-tuiter-verified-logo {
+  width: 18px;
+}
+
+.wd-fg-color-gray {
+  color: rgb(110, 118, 125);
+}
+
+.wd-fg-color-blue {
+  color: rgb(29, 161, 242);
+}
+
+.wd-fg-color-white {
+  color: white;
+}
+
+.wd-pos-relative-nudge-down-right {
+  position: relative;
+  top: 28px;
+  left: 35px;
+}
