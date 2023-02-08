@@ -6,283 +6,631 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="../../vendors/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css" />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
-    <div class="">
-      <div>
-        <div class="wd-pos-relative-nudge-down-right">
-          <i class="fas fa-search wd-fg-color-gray"></i>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-1 col-2 mt-4">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fa-solid fa-house"></i>
+              <p class="d-none d-xl-inline">Home</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action active">
+              <i class="fa-regular fa-hashtag"></i>
+              <p class="d-none d-xl-inline">Explore</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fa-solid fa-bell"></i>
+              <p class="d-none d-xl-inline">Notifications</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="d-none d-xl-inline">Messages</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fa-solid fa-bookmark"></i>
+              <p class="d-none d-xl-inline">Bookmarks</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fa-regular fa-list"></i>
+              <p class="d-none d-xl-inline">Lists</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fa-solid fa-user"></i>
+              <p class="d-none d-xl-inline">Profile</p></a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-ellipsis"></i>
+              <p class="d-none d-xl-inline">More</p></a
+            >
+          </div>
+          <a href="" class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</a>
+
+          <div class="d-block d-sm-none fa-2x">XS</div>
+          <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+          <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+          <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+          <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+          <div class="d-none d-xxl-block fa-2x">XXL</div>
         </div>
-        <input id="wd-search-tuit" type="text" placeholder="Search Tuiter" />
-        <a href="explore-settings.html"
-          ><i class="fa-solid fa-gear wd-fg-color-blue wd-explore-settings"></i
-        ></a>
-      </div>
 
-      <div>
-        <p class="wd-tuit-headers wd-fg-color-blue wd-border-bottom">For you</p>
-        <p class="wd-tuit-headers wd-fg-color-gray">Trending</p>
-        <p class="wd-tuit-headers wd-fg-color-gray">COVID-19</p>
-        <p class="wd-tuit-headers wd-fg-color-gray">News</p>
-        <p class="wd-tuit-headers wd-fg-color-gray">Sports</p>
-        <p class="wd-tuit-headers wd-fg-color-gray">Entertainment</p>
-      </div>
-    </div>
+        <div class="col-xl-6 col-lg-7 col-10">
+          <div class="">
+            <div>
+              <div class="wd-pos-relative-nudge-down-right">
+                <i class="fas fa-search wd-fg-color-gray"></i>
+              </div>
+              <input
+                class="pt-0"
+                id="wd-search-tuit"
+                type="text"
+                placeholder="Search Tuiter"
+              />
+              <a href="explore-settings.html"
+                ><i
+                  class="fa-solid fa-gear fa-2x wd-fg-color-blue wd-explore-settings"
+                ></i
+              ></a>
+            </div>
 
-    <div style="clear: both"></div>
+            <div class="mt-2">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" class="nav-link active">For you</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Trending</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a href="" class="nav-link wd-padding-left-right">COVID-19</a>
+                </li> -->
+                <li class="nav-item">
+                  <a href="" class="nav-link t">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Sports</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a href="" class="nav-link">Entertainment</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-    <div class="wd-explore-border">&nbsp;</div>
+          <div class="card mt-2">
+            <img
+              class="card-img-top"
+              src="/tuiter/images/spacex_starship.jpg"
+              alt=""
+            />
+            <div
+              class="card-img-overlay card-inverse d-flex justify-content-end flex-column"
+            >
+              <h2 class="text-white">SpaceX's Starship</h2>
+            </div>
+          </div>
 
-    <div class="wd-padding-left-16 wd-explore-border">
-      <div>
-        <i class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"></i>
-        <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
-          Trending in Science
-        </p>
-        <h3 class="wd-fg-color-white wd-margin-bottom-top">Starship</h3>
-        <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
-          55.5K Tuits
-        </p>
-      </div>
+          <!--Web Development 1 news-->
+          <div class="border border-gray container pt-2 pb-1">
+            <img
+              class="my-auto wd-float-right rounded wd-img-size align-middle"
+              src="/tuiter/images/reactJS.png"
+              alt=""
+            />
+            <p class="text-secondary font-weight-bold mb-0">Web Development</p>
+            <p class="fw-bold mb-0">
+              ReactJS
+              <span class="fa-stack small"
+                ><i class="fa-solid fa-circle fa-stack-2x"></i
+                ><i class="fa-solid fa-check fa-stack-1x fa-inverse"></i
+              ></span>
+              <span class="text-secondary fw-normal"> -2h</span>
+            </p>
+            <p class="fw-bold mb-1">
+              React.js is a component based front end library that makes it
+              veryeasy to build Single Page Applications or SPAs
+            </p>
+          </div>
 
-      <div>
-        <i class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"></i>
-        <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
-          Sports Trending
-        </p>
-        <h3 class="wd-fg-color-white wd-margin-bottom-top">Joe Rogan</h3>
-        <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
-          5,218 Tuits
-        </p>
-      </div>
-    </div>
+          <!--JavaScript news-->
+          <div class="border border-gray container pt-2 pb-1">
+            <img
+              class="my-auto wd-float-right rounded wd-img-size"
+              src="/tuiter/images/JavaScript.png"
+              alt=""
+            />
+            <p class="fw-bold mb-0">
+              JavaScript
+              <span class="fa-stack small"
+                ><i class="fa-solid fa-circle fa-stack-2x"></i
+                ><i class="fa-solid fa-check fa-stack-1x fa-inverse"></i
+              ></span>
+              <span class="text-secondary fw-normal"> -2h</span>
+            </p>
+            <p class="fw-bold mb-0">
+              JavaScript is a programming language that can run on browsers as
+              well as desktops
+            </p>
+            <p class="text-secondary">123K Tweets</p>
+          </div>
 
-    <div class="wd-explore-border-img">
-      <img
-        class="wd-float-right wd-img-size-position"
-        src="/tuiter/images/explore-news1.jpg"
-        alt=""
-      />
-      <img
-        class="wd-tuiter-verified-logo wd-float-left wd-padding-left-16 wd-padding-top-16"
-        src="/tuiter/images/new-york-times-logo.png"
-        alt=""
-      />
-      <p
-        style="padding-left: 3px"
-        class="wd-fg-color-white wd-float-left wd-margin-bottom"
-      >
-        The New York Times
-      </p>
-      <img
-        style="padding-left: 2px"
-        class="wd-tuiter-verified-logo wd-float-left wd-padding-top-16"
-        src="/tuiter/images/tuiter_verfied.png"
-        alt="tuiter_verfied_badge"
-      />
-      <p
-        class="wd-padding-left-16 wd-fg-color-gray wd-float-left wd-margin-bottom"
-      >
-        Yesterday
-      </p>
-      <h3
-        class="wd-padding-left-16 wd-fg-color-white wd-clear-left wd-margin-top"
-      >
-        CNN's Cuomo conundrum: A star anchor with a brother in trouble
-      </h3>
-    </div>
+          <!--Web Development 2 news-->
+          <div class="border border-gray container pt-2 pb-1">
+            <img
+              class="my-auto wd-float-right rounded wd-img-size"
+              src="/tuiter/images/jQuery.png"
+              alt=""
+            />
+            <p class="text-secondary mb-0 mt-1">Web Development</p>
+            <p class="fw-bold mb-0">jQuery</p>
+            <p class="text-secondary mb-2">123K Tweets</p>
+          </div>
 
-    <div class="wd-explore-border-img">
-      <img
-        class="wd-float-right wd-img-size-position wd-clear-both"
-        src="/tuiter/images/explore-news2.jpg"
-        alt=""
-      />
-      <p class="wd-padding-left-16 wd-fg-color-gray wd-margin-bottom">
-        COVID-19 LIVE
-      </p>
-      <h3 class="wd-padding-left-16 wd-fg-color-white wd-margin-top">
-        Covid-19: News and updates for Massachusetts
-      </h3>
-    </div>
+          <!--Web Development 3 news-->
+          <div class="border border-gray container pt-2 pb-1 mb-2">
+            <img
+              class="my-auto wd-float-right rounded wd-img-size"
+              src="/tuiter/images/nodeJs.png"
+              alt=""
+            />
+            <p class="text-secondary mb-0 mt-1">Web Development</p>
+            <p class="fw-bold mb-0">
+              NodeJS
+              <span class="fa-stack small"
+                ><i class="fa-solid fa-circle fa-stack-2x"></i
+                ><i class="fa-solid fa-check fa-stack-1x fa-inverse"></i
+              ></span>
+              <span class="text-secondary fw-normal"> -2h</span>
+            </p>
+            <p class="text-secondary mb-2">123K Tweets</p>
+          </div>
 
-    <div class="wd-explore-border-img">
-      <img
-        class="wd-float-right wd-img-size-position wd-clear-both"
-        src="/tuiter/images/explore-news3.jpg"
-        alt=""
-      />
+          <!-- 1st random post
 
-      <img
-        class="wd-tuiter-verified-logo wd-float-left wd-padding-left-16 wd-padding-top-16"
-        src="/tuiter/images/bloomberg-logo.png"
-        alt=""
-      />
-      <p
-        style="padding-left: 3px"
-        class="wd-fg-color-white wd-float-left wd-margin-bottom"
-      >
-        Bloomberg Opinion
-      </p>
-      <img
-        style="padding-left: 2px"
-        class="wd-tuiter-verified-logo wd-float-left wd-padding-top-16"
-        src="/tuiter/images/tuiter_verfied.png"
-        alt="tuiter_verfied_badge"
-      />
-      <p
-        class="wd-padding-left-16 wd-fg-color-gray wd-float-left wd-margin-bottom"
-      >
-        Yesterday
-      </p>
-      <div>
-        <h3
-          class="wd-padding-left-16 wd-fg-color-white wd-clear-left wd-margin-top"
-        >
-          Thinking about getting a booster? Read this first.
-        </h3>
-      </div>
-    </div>
+          <div class="wd-padding-left-16 wd-explore-border mt-2">
+            <div>
+              <i
+                class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"
+              ></i>
+              <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
+                Trending in Science
+              </p>
+              <h3 class=".text-dark wd-margin-bottom-top">Starship</h3>
+              <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
+                55.5K Tuits
+              </p>
+            </div>
 
-    <div class="wd-padding-left-16 wd-explore-border-img">
-      <i class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"></i>
-      <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
-        Trending in United States
-      </p>
-      <h3 class="wd-fg-color-white wd-margin-bottom-top">Wonder Bread</h3>
-      <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
-        1,259 Tuits
-      </p>
-    </div>
+            <div>
+              <i
+                class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"
+              ></i>
+              <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
+                Sports Trending
+              </p>
+              <h3 class="text-dark wd-margin-bottom-top">Joe Rogan</h3>
+              <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
+                5,218 Tuits
+              </p>
+            </div>
+          </div>
 
-    <!-- Second Set of Examples -->
+          2nd random post
 
-    <div class="wd-explore-border-img">
-      <img
-        class="wd-float-right wd-img-size-position"
-        src="/tuiter/images/explore-news4.jpg"
-        alt=""
-      />
-      <img
-        class="wd-tuiter-verified-logo wd-float-left wd-padding-left-16 wd-padding-top-16"
-        src="/tuiter/images/boston-globe-logo.png"
-        alt=""
-      />
-      <p
-        style="padding-left: 3px"
-        class="wd-fg-color-white wd-float-left wd-margin-bottom"
-      >
-        The Boston Globe
-      </p>
-      <img
-        style="padding-left: 2px"
-        class="wd-tuiter-verified-logo wd-float-left wd-padding-top-16"
-        src="/tuiter/images/tuiter_verfied.png"
-        alt="tuiter_verfied_badge"
-      />
-      <p
-        class="wd-padding-left-16 wd-fg-color-gray wd-float-left wd-margin-bottom"
-      >
-        Yesterday
-      </p>
-      <h3
-        class="wd-padding-left-16 wd-fg-color-white wd-clear-left wd-margin-top"
-      >
-        Tom Brady retires once again - and 'for good' this time, he says
-      </h3>
-    </div>
+          <div class="wd-explore-border-img">
+            <img
+              class="wd-float-right wd-img-size-position"
+              src="/tuiter/images/explore-news1.jpg"
+              alt=""
+            />
+            <img
+              class="wd-tuiter-verified-logo wd-float-left wd-padding-left-16 wd-padding-top-16"
+              src="/tuiter/images/new-york-times-logo.png"
+              alt=""
+            />
+            <p
+              style="padding-left: 3px"
+              class="text-dark wd-float-left wd-margin-bottom"
+            >
+              The New York Times
+            </p>
+            <img
+              style="padding-left: 2px"
+              class="wd-tuiter-verified-logo wd-float-left wd-padding-top-16"
+              src="/tuiter/images/tuiter_verfied.png"
+              alt="tuiter_verfied_badge"
+            />
+            <p
+              class="wd-padding-left-16 wd-fg-color-gray wd-float-left wd-margin-bottom"
+            >
+              Yesterday
+            </p>
+            <h3
+              class="wd-padding-left-16 text-dark wd-clear-left wd-margin-top"
+            >
+              CNN's Cuomo conundrum: A star anchor with a brother in trouble
+            </h3>
+          </div>
 
-    <div class="wd-padding-left-16 wd-explore-border">
-      <div>
-        <i class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"></i>
-        <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
-          Trending in Technology
-        </p>
-        <h3 class="wd-fg-color-white wd-margin-bottom-top">ChatGPT</h3>
-        <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
-          20.5K Tuits
-        </p>
-      </div>
+          3rd Random post
 
-      <div>
-        <i class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"></i>
-        <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
-          Sports Trending
-        </p>
-        <h3 class="wd-fg-color-white wd-margin-bottom-top">Conor McGregor</h3>
-        <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
-          6,009 Tuits
-        </p>
-      </div>
-    </div>
+          <div class="wd-explore-border-img">
+            <img
+              class="wd-float-right wd-img-size-position wd-clear-both"
+              src="/tuiter/images/explore-news2.jpg"
+              alt=""
+            />
+            <p class="wd-padding-left-16 wd-fg-color-gray wd-margin-bottom">
+              COVID-19 LIVE
+            </p>
+            <h3 class="wd-padding-left-16 text-dark wd-margin-top">
+              Covid-19: News and updates for Massachusetts
+            </h3>
+          </div>
 
-    <div class="wd-explore-border-img">
-      <img
-        class="wd-float-right wd-img-size-position wd-clear-both"
-        src="/tuiter/images/explore-news5.jpg"
-        alt=""
-      />
-      <p class="wd-padding-left-16 wd-fg-color-gray wd-margin-bottom">
-        POLITICS LIVE
-      </p>
-      <h3 class="wd-padding-left-16 wd-fg-color-white wd-margin-top">
-        Trump Justice Department's Russia Investigation Was Actual Witch Hunt
-      </h3>
-    </div>
+          4th Random post
 
-    <div class="wd-padding-left-16 wd-explore-border-img">
-      <i class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"></i>
-      <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
-        Trending in United States
-      </p>
-      <h3 class="wd-fg-color-white wd-margin-bottom-top">
-        Boston - Most Expensive Place to Live
-      </h3>
-      <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
-        3,333 Tuits
-      </p>
-    </div>
+          <div class="wd-explore-border-img">
+            <img
+              class="wd-float-right wd-img-size-position wd-clear-both"
+              src="/tuiter/images/explore-news3.jpg"
+              alt=""
+            />
 
-    <div class="wd-explore-border-img">
-      <img
-        class="wd-float-right wd-img-size-position wd-clear-both"
-        src="/tuiter/images/explore-news6.jpg"
-        alt=""
-      />
+            <img
+              class="wd-tuiter-verified-logo wd-float-left wd-padding-left-16 wd-padding-top-16"
+              src="/tuiter/images/bloomberg-logo.png"
+              alt=""
+            />
+            <p
+              style="padding-left: 3px"
+              class="text-dark wd-float-left wd-margin-bottom"
+            >
+              Bloomberg Opinion
+            </p>
+            <img
+              style="padding-left: 2px"
+              class="wd-tuiter-verified-logo wd-float-left wd-padding-top-16"
+              src="/tuiter/images/tuiter_verfied.png"
+              alt="tuiter_verfied_badge"
+            />
+            <p
+              class="wd-padding-left-16 wd-fg-color-gray wd-float-left wd-margin-bottom"
+            >
+              Yesterday
+            </p>
+            <div>
+              <h3
+                class="wd-padding-left-16 text-dark wd-clear-left wd-margin-top"
+              >
+                Thinking about getting a booster? Read this first.
+              </h3>
+            </div>
+          </div>
 
-      <img
-        class="wd-tuiter-verified-logo wd-float-left wd-padding-left-16 wd-padding-top-16"
-        src="/tuiter/images/vogue-logo.png"
-        alt=""
-      />
-      <p
-        style="padding-left: 3px"
-        class="wd-fg-color-white wd-float-left wd-margin-bottom"
-      >
-        Vogue
-      </p>
-      <img
-        style="padding-left: 2px"
-        class="wd-tuiter-verified-logo wd-float-left wd-padding-top-16"
-        src="/tuiter/images/tuiter_verfied.png"
-        alt="tuiter_verfied_badge"
-      />
-      <p
-        class="wd-padding-left-16 wd-fg-color-gray wd-float-left wd-margin-bottom"
-      >
-        Yesterday
-      </p>
-      <div>
-        <h3
-          class="wd-padding-left-16 wd-fg-color-white wd-clear-left wd-margin-top"
-        >
-          6 Women-Directed Films You Need to Watch
-        </h3>
+          5th random post
+
+          <div class="wd-padding-left-16 wd-explore-border-img">
+            <i
+              class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"
+            ></i>
+            <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
+              Trending in United States
+            </p>
+            <h3 class="text-dark wd-margin-bottom-top">Wonder Bread</h3>
+            <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
+              1,259 Tuits
+            </p>
+          </div> -->
+        </div>
+
+        <!-- Second Set of Examples
+
+        <div class="wd-explore-border-img">
+          <img
+            class="wd-float-right wd-img-size-position"
+            src="/tuiter/images/explore-news4.jpg"
+            alt=""
+          />
+          <img
+            class="wd-tuiter-verified-logo wd-float-left wd-padding-left-16 wd-padding-top-16"
+            src="/tuiter/images/boston-globe-logo.png"
+            alt=""
+          />
+          <p
+            style="padding-left: 3px"
+            class="text-dark wd-float-left wd-margin-bottom"
+          >
+            The Boston Globe
+          </p>
+          <img
+            style="padding-left: 2px"
+            class="wd-tuiter-verified-logo wd-float-left wd-padding-top-16"
+            src="/tuiter/images/tuiter_verfied.png"
+            alt="tuiter_verfied_badge"
+          />
+          <p
+            class="wd-padding-left-16 wd-fg-color-gray wd-float-left wd-margin-bottom"
+          >
+            Yesterday
+          </p>
+          <h3
+            class="wd-padding-left-16 text-dark wd-clear-left wd-margin-top"
+          >
+            Tom Brady retires once again - and 'for good' this time, he says
+          </h3>
+        </div>
+
+        <div class="wd-padding-left-16 wd-explore-border">
+          <div>
+            <i
+              class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"
+            ></i>
+            <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
+              Trending in Technology
+            </p>
+            <h3 class="text-dark wd-margin-bottom-top">ChatGPT</h3>
+            <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
+              20.5K Tuits
+            </p>
+          </div>
+
+          <div>
+            <i
+              class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"
+            ></i>
+            <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
+              Sports Trending
+            </p>
+            <h3 class="text-dark wd-margin-bottom-top">
+              Conor McGregor
+            </h3>
+            <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
+              6,009 Tuits
+            </p>
+          </div>
+        </div>
+
+        <div class="wd-explore-border-img">
+          <img
+            class="wd-float-right wd-img-size-position wd-clear-both"
+            src="/tuiter/images/explore-news5.jpg"
+            alt=""
+          />
+          <p class="wd-padding-left-16 wd-fg-color-gray wd-margin-bottom">
+            POLITICS LIVE
+          </p>
+          <h3 class="wd-padding-left-16 text-dark wd-margin-top">
+            Trump Justice Department's Russia Investigation Was Actual Witch
+            Hunt
+          </h3>
+        </div>
+
+        <div class="wd-padding-left-16 wd-explore-border-img">
+          <i class="fas fa-ellipsis-h wd-fg-color-gray wd-explore-settings"></i>
+          <p class="wd-fg-color-gray wd-margin-bottom wd-topic-font-size">
+            Trending in United States
+          </p>
+          <h3 class="text-dark wd-margin-bottom-top">
+            Boston - Most Expensive Place to Live
+          </h3>
+          <p class="wd-fg-color-gray wd-margin-top wd-topic-font-size">
+            3,333 Tuits
+          </p>
+        </div>
+
+        <div class="wd-explore-border-img">
+          <img
+            class="wd-float-right wd-img-size-position wd-clear-both"
+            src="/tuiter/images/explore-news6.jpg"
+            alt=""
+          />
+
+          <img
+            class="wd-tuiter-verified-logo wd-float-left wd-padding-left-16 wd-padding-top-16"
+            src="/tuiter/images/vogue-logo.png"
+            alt=""
+          />
+          <p
+            style="padding-left: 3px"
+            class="text-dark wd-float-left wd-margin-bottom"
+          >
+            Vogue
+          </p>
+          <img
+            style="padding-left: 2px"
+            class="wd-tuiter-verified-logo wd-float-left wd-padding-top-16"
+            src="/tuiter/images/tuiter_verfied.png"
+            alt="tuiter_verfied_badge"
+          />
+          <p
+            class="wd-padding-left-16 wd-fg-color-gray wd-float-left wd-margin-bottom"
+          >
+            Yesterday
+          </p>
+          <div>
+            <h3
+              class="wd-padding-left-16 text-dark wd-clear-left wd-margin-top"
+            >
+              6 Women-Directed Films You Need to Watch
+            </h3>
+          </div>
+        </div> -->
+
+        <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+          <!-- <div class="list-group">
+            <span class="list-group-item list-group-item-action"
+              >Who to follow</span
+            >
+
+            <a href="#" class="list-group-item list-group-item-action">
+              <p class="fw-bold">
+                Java
+                <span class="fa-stack"
+                  ><i class="fa-solid fa-circle fa-stack-2x"></i
+                  ><i class="fa-solid fa-check fa-stack-1x fa-inverse"></i
+                ></span>
+              </p>
+              <p>@Java</p>
+              <a href="" class="btn btn-primary rounded-pill wd-float-right"
+                >Follow</a
+              >
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action"
+              >Notifications</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >Messages</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >Bookmarks</a
+            >
+            <a href="#" class="list-group-item list-group-item-action">Lists</a>
+            <a href="#" class="list-group-item list-group-item-action"
+              >Profile</a
+            >
+            <a href="#" class="list-group-item list-group-item-action">More</a>
+          </div> -->
+
+          <ul class="list-group mt-4">
+            <li class="list-group-item fw-bold">Who to follow</li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="row">
+                <div class="col-lg-2">
+                  <img
+                    src="/tuiter/images/java.png"
+                    alt=""
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <p class="fw-bold mb-0">
+                    Java
+                    <span class="fa-stack small"
+                      ><i class="fa-solid fa-circle fa-stack-2x"></i
+                      ><i class="fa-solid fa-check fa-stack-1x fa-inverse"></i
+                    ></span>
+                  </p>
+                  <p class="mb-0">@Java</p>
+                </div>
+                <div class="col-xl-3 col-lg-4 pb-0">
+                  <a href="" class="btn btn-primary rounded-pill">Follow</a>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="row">
+                <div class="col-lg-2">
+                  <img
+                    src="/tuiter/images/relativity_space.jpg"
+                    alt=""
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <p class="fw-bold mb-0">
+                    Relativity Space
+                    <span class="fa-stack small"
+                      ><i class="fa-solid fa-circle fa-stack-2x"></i
+                      ><i class="fa-solid fa-check fa-stack-1x fa-inverse"></i
+                    ></span>
+                  </p>
+                  <p class="mb-0">@relativityspace</p>
+                </div>
+                <div class="col-xl-3 col-lg-4 pb-0">
+                  <a href="" class="btn btn-primary rounded-pill">Follow</a>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="row">
+                <div class="col-lg-2">
+                  <img
+                    src="/tuiter/images/virgin_galactic.png"
+                    alt=""
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <p class="fw-bold mb-0">
+                    Virgin Galactic
+                    <span class="fa-stack small"
+                      ><i class="fa-solid fa-circle fa-stack-2x"></i
+                      ><i class="fa-solid fa-check fa-stack-1x fa-inverse"></i
+                    ></span>
+                  </p>
+                  <p class="mb-0">@virgingalactic</p>
+                </div>
+                <div class="col-xl-3 col-lg-4 pb-0">
+                  <a href="" class="btn btn-primary rounded-pill">Follow</a>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="row">
+                <div class="col-lg-2">
+                  <img
+                    src="/tuiter/images/Nasa.png"
+                    alt=""
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <p class="fw-bold mb-0">
+                    NASA
+                    <span class="fa-stack small"
+                      ><i class="fa-solid fa-circle fa-stack-2x"></i
+                      ><i class="fa-solid fa-check fa-stack-1x fa-inverse"></i
+                    ></span>
+                  </p>
+                  <p class="mb-0">@NASA</p>
+                </div>
+                <div class="col-xl-3 col-lg-4 pb-0">
+                  <a href="" class="btn btn-primary rounded-pill">Follow</a>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="row">
+                <div class="col-lg-2">
+                  <img
+                    src="/tuiter/images/Tesla.png"
+                    alt=""
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <p class="fw-bold mb-0">
+                    Tesla
+                    <span class="fa-stack small"
+                      ><i class="fa-solid fa-circle fa-stack-2x"></i
+                      ><i class="fa-solid fa-check fa-stack-1x fa-inverse"></i
+                    ></span>
+                  </p>
+                  <p class="mb-0">@Tesla</p>
+                </div>
+                <div class="col-xl-3 col-lg-4 pb-0 wd-follow-btn">
+                  <a href="" class="btn btn-primary rounded-pill">Follow</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

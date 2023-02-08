@@ -1,6 +1,5 @@
 body {
-  background-color: black;
-  max-width: 80%;
+  background-color: white;
   margin: 0 auto !important;
   float: none !important;
 }
@@ -23,11 +22,12 @@ body {
 }
 
 #wd-search-tuit {
+  border-width: 1px;
   border-radius: 20px;
   border-color: rgb(47, 51, 54);
-  width: 60%;
+  width: 85%;
   height: 30px;
-  background-color: darkgray;
+  background-color: white;
   padding-left: 50px;
   margin-left: 16px;
 }
@@ -90,9 +90,14 @@ body {
   margin-top: 16px;
 }
 
+.wd-img-size {
+  width: 80px;
+  height: 80px;
+}
+
 .wd-explore-settings {
   float: right;
-  padding-top: 11px;
+  /* padding-top: 11px; */
   padding-right: 12px;
 }
 
@@ -114,6 +119,23 @@ body {
 
 .wd-pos-relative-nudge-down-right {
   position: relative;
-  top: 28px;
+  top: 25px;
   left: 35px;
+}
+
+.fa-stack.small {
+  font-size: 0.5em;
+}
+
+i {
+  vertical-align: middle;
+}
+
+.wd-follow-btn {
+  vertical-align: middle;
+}
+
+.wd-padding-left-right {
+  padding-left: 12px;
+  padding-right: 12px;
 }
