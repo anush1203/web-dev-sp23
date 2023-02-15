@@ -1,0 +1,6 @@
+.wd-post-image-size {
+  max-width: 100%;
+  border: 1px solid rgb(47, 51, 54);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}

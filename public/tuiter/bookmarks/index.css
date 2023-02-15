@@ -1,5 +1,4 @@
 body {
-  background-color: black;
   max-width: 80%;
   margin: 0 auto !important;
   float: none !important;
@@ -42,8 +41,8 @@ body {
 }
 
 .wd-img-post-txt-style {
-    padding: 12px;
-    margin: 0;
+  padding: 12px;
+  margin: 0;
 }
 
 .wd-icon-position {
@@ -103,20 +102,20 @@ body {
 }
 
 .wd-padding-right-bottom-left-12 {
-    padding: 0 12px 12px 12px;
-    margin: 0;
+  padding: 0 12px 12px 12px;
+  margin: 0;
 }
 
 .wd-margin-top-0 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .wd-make-inline-block {
-    display: inline-block;
-    margin-top: 12px;
-    padding-bottom: 2px;
+  display: inline-block;
+  margin-top: 12px;
+  padding-bottom: 2px;
 }
 
 .wd-txt-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
