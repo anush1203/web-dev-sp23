@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Buy milk",
+    "status": "CANCELED",
+    "done": true
+  },
+  { "title": "Pick up kids", "status": "IN PROGRESS", "done": false },
+  { "title": "Walk the dog", "status": "COMPLETED", "done": false }
+]

@@ -1,5 +1,5 @@
-import WhoToFollowListItem from "../WhoToFollowList/WhoToFollowListItem.js";
-import whos from "../WhoToFollowList/Who.js";
+import WhoToFollowListItem from "./WhoToFollowListItem.js";
+import whos from "./Who.js";
 
 const WhoToFollowComp = () => {
   return `<ul class="list-group mt-4">
