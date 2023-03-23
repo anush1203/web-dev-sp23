@@ -80,15 +80,16 @@ const NavigationSidebar = () => {
         <i className="bi bi-newspaper"></i>
         <p className="d-none d-xl-inline ps-2">Top Articles</p>
       </a>
-      <a
-        href="#"
+      <Link
+        to="/tuiter/profile"
         className={`list-group-item list-group-item-action ${
           "profile" === active ? "active" : ""
-        }`}
+        } ${"profile-edit" === active ? "active" : ""}`}
       >
         <i className="bi bi-person"></i>
         <p className="d-none d-xl-inline ps-2">Profile</p>
-      </a>
+      </Link>
+
       <a
         href="#"
         className={`list-group-item list-group-item-action ${
