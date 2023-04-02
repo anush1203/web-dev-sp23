@@ -13,6 +13,7 @@ const TuitStats = ({ tuit }) => {
       updateTuitThunk({
         ...tuit,
         likes: tuit.likes + 1,
+        liked: tuit.liked,
       })
     );
   };
@@ -73,28 +74,6 @@ const TuitStats = ({ tuit }) => {
         <i className="bi bi-upload wd-fg-navbar-txt-color"></i>
       </div>
     </div>
-
-    // <div className="wd-margin-bottom-12">
-    //   <a className="wd-distribute-icons" href="#">
-    //     <i className="bi bi-chat-left wd-fg-navbar-txt-color"></i>
-    //     <span className="wd-icon-position wd-fg-color-gray">
-    //       {tuit.replies}
-    //     </span>
-    //   </a>
-    //   <a className="wd-distribute-icons" href="#">
-    //     <i className="bi bi-arrow-repeat wd-fg-navbar-txt-color"></i>
-    //     <span className="wd-icon-position wd-fg-color-gray">
-    //       {tuit.retuits}
-    //     </span>
-    //   </a>
-    //   <a className="wd-distribute-icons wd-fg-navbar-txt-color" href="#">
-    //     <i className="bi bi-heart"></i>
-    //     <span className="wd-icon-position wd-fg-color-gray">{tuit.likes}</span>
-    //   </a>
-    //   <a className="wd-distribute-icons wd-fg-navbar-txt-color" href="#">
-    //     <i className="bi bi-upload"></i>
-    //   </a>
-    // </div>
   );
 };
 
